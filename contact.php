@@ -1,4 +1,4 @@
-<?php include_once "global_path.php";?>
+<?php include_once "globalpath.php";?>
 <!DOCTYPE HTML>
 <!--[if lt IE 9]><html class="ie"><![endif]-->
 <!--[if gte IE 9]><!--><html><!--<![endif]-->
