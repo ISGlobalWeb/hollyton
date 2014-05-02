@@ -1,0 +1,1 @@
+<?php define('GLOBAL_PATH', 'http://localhost/hollyton', true);// website url?>

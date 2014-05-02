@@ -1,0 +1,196 @@
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section {margin:0;padding:0;border:0;}
+body, h1, h2, h3, h4, h4, h5, h6, p,li, label {  font-size:15px; font-style: normal; margin: 0; padding: 0;} 
+
+h1, h2, h3 {color:#13717B;}
+h1{font-size:20px;}
+h2 {font-size:18px; }
+h3 {font-size: 15px; }
+p{ line-height:20px; color:#fff;}
+html {height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+body {min-height:100%;font-size:100%;}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, audio, canvas, video {display:block;}
+strong {display: block; font-size: 15px;}
+input, textarea, button, select {margin:0; font-size:100%;line-height:normal;vertical-align:baseline; font-size:12px;}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {cursor:pointer;-webkit-appearance:button;}
+input[type="radio"] {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+textarea {overflow:auto; resize:vertical;}
+table {border-collapse:collapse;border-spacing:0;}
+a img, img {-ms-interpolation-mode:bicubic; max-width:100%;border:0;}
+body { font-family:'ebgaramond-regular'; color:#666;}
+u, li, a {list-style:none; text-decoration:none;}
+a{color: #fff;}
+a:hover { color: #0c5b57;}
+.clear{ clear:both;}
+.co-green{color:#0c5b57;}
+@font-face {
+    font-family: 'ebgaramond-regular'; 
+    src: url('../font/ebgaramond-regular.eot');
+    src: url('../font/ebgaramond-regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/ebgaramond-regular.woff') format('woff'),
+         url('../font/ebgaramond-regular.ttf') format('truetype'),
+         url('../font/ebgaramond-regular.svg#ebgaramond-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+#wrapper { margin: 0 auto; width:100%;}
+/*Header Start*/
+header {display: block; position: relative; z-index: 999;width:100%; }
+.banner{ width:100%; position:relative; overflow:hidden; min-height:586px;  background:url(../images/hollyton-loader.gif) no-repeat center center;}
+.banner img{ width:100%; vertical-align:bottom;}
+.header-outer{width:100%; position:absolute; top:0px; background:url(../images/top-trans-bg.png) repeat-x bottom; height:150px;}
+.header-inner{width:1200px; margin:0px auto; overflow:hidden; padding-top:50px;}
+#logo {float:left;  padding-left:2%;  width:12%; height:142px;}
+#logo a { display: block; height: 142px;  }
+#logo a img {  }
+#head-right{float:right; padding-right:2%; width:84%;}
+.call-us {  color: #fff; float:right; font-size:21px;  width:100%; text-align:right;}
+.call-us a{  color: #fff; }
+.ico-phone{padding-right:20px;}
+.ico-phone img{position:relative; top:3px; height:18px; padding-right:5px;}
+.ico-mail img{position:relative; top:3px; height:19px;  padding-right:5px; }
+
+.menu {height:60px; float:right; text-transform:uppercase;  padding-top:13px;}
+.menu ul { padding:0px;}
+.menu li {float:left; line-height:60px; color:#fff; font-size:18px; padding:0px 10px 0px 10px; background:url(../images/nav-div.png) right center no-repeat;}
+.menu li a {}
+.menu li a:hover, .menu li a:active , .active{color: #fedf00; }
+.no-divder{background:none !important; padding-right:0px !important; }
+.banner-caption{ width:1200px; margin:0px auto; position:absolute; right:0px; bottom:30px; }
+.caption-text{  background:url(../images/banner-trans-bg.png) repeat; height:56px; width:352px; float:right; color:#fff; padding:10px;font-size:17px; line-height:18px;  right:2%; margin-right:2%; }
+
+/*Header end*/
+
+
+
+
+
+/*content start*/
+#content{width:100%; background:url(../images/content-bg.jpg) repeat-x #707070; min-height:300px;}
+#heading{width:100%;background:url(../images/heading-strip.png) repeat-x;}
+.content-inner{width:1200px;margin:0px auto; overflow:hidden; }
+.content-inner h2{font-size:32px; line-height:75px; color:#fedf00; width:92%;padding:0 4%;}
+.content-part{width:92%; float:left; padding:0 4%; padding-top:20px;}
+.content-part p{font:bold 16px Arial; padding-bottom:20px;}
+.content-left{width:47%; padding-right:3%; float:left;}
+.content-right{width:47%; padding-left:3%; float:left;}
+.display750{display:none;}
+.menu-link {
+    display: none;
+    float: left;
+    text-decoration: none;
+}
+
+#content fieldset.default { width:100%; border: medium none;color: #FFFFFF !important; font:bold 16px Arial;}
+#content fieldset.default label { color: #FFFFFF; display: block; float: left; margin-bottom: 3px;  overflow: visible;padding-top: 4px;width:30%;}
+#content fieldset.default input { border: 1px solid #DCDCDC;border-radius: 2px; padding: 4px; width:50%;}
+#content fieldset.default select { border: 1px solid #DDDDDD; border-radius: 2px; padding: 1px; width:50%;}
+#content fieldset.default textarea { border: 1px solid #DDDDDD; border-radius: 2px; padding: 1px; width:51%;}
+
+#content fieldset.default ol { height: auto;list-style: none outside none;}
+#content fieldset.default ol li {clear: both !important; float: left; list-style: none outside none; padding: 12px 0 0 !important;width: 100%;}
+.button a, input.button { background:#FFF000;border-radius: 4px; color: #0c5b57; cursor: pointer; display: block; padding:5px 20px !important;text-align: center;text-decoration: none;text-transform: uppercase;width:auto !important; font-weight:bold; }
+
+
+/*footer start*/
+#footer{width:100%; background:url(../images/footer-img.png) bottom repeat-x #707070;  height:154px; }
+.footer-inner{width:1200px ; margin:0px auto; color:#fff; }
+.copyright{padding-top:118px; padding-left:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1024px) and (max-width:1200px) {
+  /* rules that only apply for canvases narrower than 1000px */
+}
+@media only screen and (max-width:1024px){
+  /* rules that only apply for canvases narrower than 1000px */
+    .banner{ width:100%; position:relative; min-height:100px; }
+ header, #banner, #middle,.header-inner,.content-inner,.footer-inner{ width:100%; padding:0%;} 
+  .header-outer{ height:105px;}
+  .header-inner{padding-top:0px;}
+  .menu li {font-size:15px;}
+  
+}
+@media only screen and (max-width: 999px) {
+  /* rules that only apply for canvases narrower than 1000px */
+ #menu li a {color:#3b3839; display:block; padding:0px 10px; position:relative; font-size:11px;}
+}
+@media only screen and (max-width: 800px){
+/* #top-header{width:768px; margin:0px auto;}  */
+#logo {width:16%;}
+#head-right{width:80%;}
+}
+
+@media only screen and (max-width: 750px) {
+	.clear-750{clear:both;}
+.page-home .back-btn-home{ display:none !important;}
+.call-us { clear:both;  font-size:18px; line-height:18px; height:44px; }
+.display750{ display:block;}
+.nav_750{ border:0 !important; width:100%; font-weight:bold; display:table; padding:15px 0 0 0;}
+a.back-btn-home{background:url(../images/back.png) no-repeat scroll 35px 4px #fedf00;display:block;color:#0c5b57;text-indent:99999;padding:2px 0px 6px 3px; width:60px; border-radius:3px; float:right; margin-right:5px; font-weight:normal;}
+a.menu-link { display: block; background:url(../images/menu-ico.png) no-repeat scroll 42px 4px #fedf00;color:#0c5b57;text-indent:99999;padding:2px 0px 6px 3px; width:70px; border-radius:3px; float:right; font-weight:normal;}
+.menu{height:auto; padding-top:0px; background:#383838;}
+.menu ul{display:block;}
+.menu ul li{clear:both; background:none; line-height:35px; border-bottom:1px solid #999; width:190px;}
+.menu, .menu > ul ul { overflow: hidden;max-height: 0;}
+.menu.active, .menu > ul ul.active { max-height: 55em; position:relative; z-index:1;}
+}
+
+@media only screen and (max-width: 640px) {
+/* iPhone, Android rules here */
+#logo {width:23%;}
+#head-right{width:73%; position:relative;}
+.content-left{width:100%; padding-right:0%;}
+.content-right{width:100%; padding-left:0%;}
+ .ico-phone{padding-right:10px;}
+.ico-mail{padding-right:0px; }
+#content fieldset.default input,#content fieldset.default select,#content fieldset.default textarea  { width:60%;}
+ 
+
+
+}
+@media only screen and (max-width: 480px){
+  /* iPhone, Android rules here */
+  .dis-none-480{display:none;}
+  .banner-caption{display:none;}
+  .content-inner h2{font-size:24px;}
+.ico-phone img{ width:17px; height:14px;}
+.ico-mail img{width:18px; height:14px; }
+}
+
+@media only screen and (max-width: 320px){
+  /* iPhone, Android rules here */
+.dis-none-320{display:none;}
+#logo {width:30%;}
+#head-right{width:66%;}
+.ico-phone{padding-right:0px; float:right; clear:both;}
+.ico-mail{padding-right:0px; float:right; clear:both; padding-bottom:20px;}
+  .content-inner h2{font-size:20px;}
+  
+
+
+
+}
+@media only screen and (max-width: 240px){
+  /* blackberry */
+  .call-us {  font-size:14px; }
+
+}
+
+
