@@ -1,1 +1,1 @@
-<?php define('GLOBAL_PATH', 'http://localhost/hollyton', true);// website url?>
+<?php define('GLOBAL_PATH', 'http://localhost/git-projects/hollyton', true);// website url?>
