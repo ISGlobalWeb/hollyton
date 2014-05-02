@@ -41,12 +41,19 @@
         <h2>Why LONDON?</h2>
         <div class="content-part">
         <div class="content-left">
-        <p>You won’t see us on the High Street or featured on any other  property website. That’s not our way. At Hollyton we prefer to do our business  quietly with people we know, or with people who there introduce to us As a  result, we are given the opportunity to discreetly introduce you to some of  London’s best investment opportunities.</p>
-<p>Our extensive experience and strong relationships with  property developers and owners means we have worked on every type of London  property from new developments to period twon houses. Each has it’s own  benefits, and depending on its geographical area, each presents its own risks  and rewards.</p
-></div>
+       
+<p>It is no secret that London has produced spectacular returns on investment property in recent years. With the mentality of  Londoners increasingly happy to rent their property, and with the City's population continuing to grow, demand continues to rise.</p>
+
+<p>The challenge, as the market matures, is to source the right investment opportunities. Some areas may already have reached their peak; others still have a way to go. Some types of property present better potential returns than others.</p>
+
+<p>It is important to understand the City's geography, its range of opportunities and changes to its infrastructure that may effect prices and rental yields.
+</p></div>
 <div class="content-right">
-        <p>Our way is to get to know you so well that we can introduce  you to properties that fulfil every element of your investment objectives.</p>
-         <p> The properties featured across the site are examples. We  look forword to speaking with you to discuss how you could soon be investing in  something similar.</p>
+        <p>
+Our experience, coupled with our extensive range of contacts enables us to source investment properties even range of contacts enables us to source investment properties even though there are few available. We are happy to advise you to ensure that your London investment is made against a clear and realistic set of goals.
+</p>
+         <p> 
+London is still a great place to invest, but that investment should me made wisely, and with a clear strategy in mind.</p>
           </div>
           </div>
         </div>
