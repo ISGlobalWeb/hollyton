@@ -5,9 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="canonical" href="<?php echo GLOBAL_PATH;?>/property-sell/"/>
-<title>Property to Sell?</title>
-<meta name="description" content="Welcome to Hollyton Website" />
-<meta name="keywords" content="Hollyton" />
+<title>Properties for Sale in London | Hollyton</title>
 <?php include "include/common-files.php";?>
 <!-- main mobile Js -->
 </head>

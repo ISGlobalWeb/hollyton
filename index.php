@@ -8,9 +8,7 @@ include_once ROOT_PATH."/weblogic/header.php";
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="canonical" href="<?php echo GLOBAL_PATH;?>/"/>
-<title>Welcome to Hollyton</title>
-<meta name="description" content="Welcome to Hollyton Website" />
-<meta name="keywords" content="Hollyton" />
+<title>Holltyton: London Estate Agents</title>
 <?php include "include/common-files.php";?>
 <!-- main mobile Js -->
 </head>

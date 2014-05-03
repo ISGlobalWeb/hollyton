@@ -5,9 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="canonical" href="<?php echo GLOBAL_PATH;?>/why-london/"/>
-<title>Why London?</title>
-<meta name="description" content="Welcome to Hollyton Website" />
-<meta name="keywords" content="Hollyton" />
+<title>London: Best place to invest your money | Hollyton</title>
 <?php include "include/common-files.php";?>
 <!-- main mobile Js -->
 </head>
