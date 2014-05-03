@@ -31,6 +31,8 @@
         <h1 class="f-80 co-red">404<br>
 ERROR</h1>
 <p class="co-black">Oops! Unable to show this page at the moment, maybe later... but hey sure we can give you the information you need, you can look for our services or contact us, we are happy to talk to you.</p>
+<div class="butt-y f-left"><a href="">Home</a></div>
+<div class="butt-y f-left"><a href="">Contact Us</a></div>
         </div>
 <div class="content-right">
   <img src="<?php echo GLOBAL_PATH;?>/assets/images/404.png" alt="404"></div>
@@ -38,22 +40,17 @@ ERROR</h1>
         </div>   </div>
     </div>
 <!--404 End Here-->
-<div class="clear"></div>
+
 </header>
+<div class="clear"></div>
 <!--Header End Here-->
 
-<!--Content start Here-->
-<figure id="content">
-    <div id="heading">
-        
-    </div>
-</figure>
-<!--Content end Here-->
 <!--Footer Start Here-->
 <footer>
 <?php include "include/footer.php";?>
 </footer>
 <!--Footer End Here-->
+<div class="clear"></div>
 </div>
 
 </body>

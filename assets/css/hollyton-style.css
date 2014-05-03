@@ -22,9 +22,11 @@ a{color: #fff;}
 a:hover { color: #0c5b57;}
 .f-80{font-size:80px !important;}
 .clear{ clear:both;}
+.f-left{float:left;}
+.f-right{float:right;} 
 .co-green{color:#0c5b57;}
 .co-red{color:#cc0000;}
-.co-yellow{color:#FEDF00;}
+.co-yellow{color:#fedf00;}
 .co-black{color:#333;}
 @font-face {
     font-family: 'ebgaramond-regular'; 
@@ -70,6 +72,11 @@ header {display: block; position: relative; z-index: 999;width:100%; }
 .thanks-inner{ width:1200px; margin:0px auto;  position:relative; top:30px;}
 .thanks-inner h1{ padding:0 2%; width:96%; font-size:32px; padding-bottom:20px;}
 .thanks-inner p{ padding:0 2%; width:96%; font-family:Arial;}
+.butt-y{ background:#fedf00; border-radius:4px; color: #0c5b57; cursor: pointer; padding:5px 20px !important;text-align: center;text-decoration: none;text-transform: uppercase;width:auto !important; font:bold 12px Arial; border:1px solid #DCDCDC; margin-right:20px; }
+.butt-y a{color: #0c5b57;}
+
+.butt-g{ background:#0c5b57;border-radius: 4px; color: #fff; cursor: pointer;  padding:5px 20px !important;text-align: center;text-decoration: none;text-transform: uppercase;width:auto !important; font:bold 12px Arial; border:1px solid #DCDCDC; margin-right:20px; }
+
 
 /*Header end*/
 
@@ -101,7 +108,7 @@ header {display: block; position: relative; z-index: 999;width:100%; }
 
 #content fieldset.default ol { height: auto;list-style: none outside none;}
 #content fieldset.default ol li {clear: both !important; float: left; list-style: none outside none; padding: 12px 0 0 !important;width: 100%;}
-.button a, input.button { background:#FFF000;border-radius: 4px; color: #0c5b57; cursor: pointer; display: block; padding:5px 20px !important;text-align: center;text-decoration: none;text-transform: uppercase;width:auto !important; font-weight:bold; }
+.button a, input.button { background:#fedf00; border-radius:4px !important; color: #0c5b57; cursor: pointer; display: block; padding:5px 20px !important;text-align: center;text-decoration: none;text-transform: uppercase;width:auto !important; font-weight:bold; }
 
 
 /*footer start*/
@@ -165,7 +172,8 @@ a.menu-link { display: block; background:url(../images/menu-ico.png) no-repeat s
 .thanks-content{  top:150px;min-height:150px; }
 .thanks-inner{  position:relative; top:10px;}
 .thanks-inner h1{ font-size:30px;}
-
+#content{min-height:inherit;}
+#footer{ }
 }
 
 @media only screen and (max-width: 640px) {
