@@ -1,4 +1,7 @@
-<?php include_once "globalpath.php";?>
+<?php 
+include_once "globalpath.php";
+include_once ROOT_PATH."/weblogic/header.php";
+?>
 <!DOCTYPE HTML>
 <!--[if lt IE 9]><html class="ie"><![endif]-->
 <!--[if gte IE 9]><!--><html><!--<![endif]-->

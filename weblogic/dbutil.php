@@ -1,6 +1,4 @@
 <?php
-include_once ("logutil.php");
-
 class DbUtil {
 	private $dbh=null;
 	
@@ -13,7 +11,7 @@ class DbUtil {
 		    /*** begin the transaction ***/
 		    $this->dbh->beginTransaction();
 		} catch(PDOException $e) {
-			LogUtil :: error("Error while initializing Db connection | Exception: ".$e);
+			//LogUtil :: error("Error while initializing Db connection | Exception: ".$e);
 			throw new Exception($e->getMessage());
     	}
    	}
@@ -21,9 +19,9 @@ class DbUtil {
 	public function execute($query) {
 		try {
 			$this->dbh->exec($query);
-			LogUtil :: debug($query);
+			//LogUtil :: debug($query);
 		} catch(PDOException $e) {
-			LogUtil :: error("Error while executing SQL: ".$query."\nDetails: ".$e);
+			//LogUtil :: error("Error while executing SQL: ".$query."\nDetails: ".$e);
 			throw new Exception($e->getMessage());
     	}
 	}
@@ -32,9 +30,9 @@ class DbUtil {
 		$result = "";
 		try {
 			$result=$this->dbh->query($query);
-			LogUtil :: debug($query);
+			//LogUtil :: debug($query);
 		} catch(PDOException $e) {
-			LogUtil :: error("Error while executing SQL: ".$query."\nDetails: ".$e);
+			//LogUtil :: error("Error while executing SQL: ".$query."\nDetails: ".$e);
 			throw new Exception($e->getMessage());
     	}
     	return $result;
@@ -45,9 +43,9 @@ class DbUtil {
 		try {
 			$result=$this->dbh->query($query)->fetch();
 			$count=count($result)-1;
-			LogUtil :: debug($query);
+			//LogUtil :: debug($query);
 		} catch(PDOException $e) {
-			LogUtil :: error("Error while getting count of SQL: ".$query."\nDetails: ".$e);
+			//LogUtil :: error("Error while getting count of SQL: ".$query."\nDetails: ".$e);
 			throw new Exception($e->getMessage());
     	}
     	return $count;
@@ -57,7 +55,7 @@ class DbUtil {
 		try {
 			return $this->dbh->lastInsertId();
 		} catch(PDOException $e) {
-			LogUtil :: error("Error while getting primary key: \nDetails: ".$e);
+			//LogUtil :: error("Error while getting primary key: \nDetails: ".$e);
 			throw new Exception($e->getMessage());
     	}
 	}
@@ -75,10 +73,10 @@ class DbUtil {
 	public function prepare($query) {
 		try {
 			$statement = $this->dbh->prepare($query);
-			LogUtil :: debug($query);
+			//LogUtil :: debug($query);
 			return $statement;
 		} catch(PDOException $e) {
-			LogUtil :: error("Error while preparing statement: \nDetails: ".$e);
+			//LogUtil :: error("Error while preparing statement: \nDetails: ".$e);
 			throw new Exception($e->getMessage());
 		}
 
