@@ -20,7 +20,7 @@ body { font-family:'ebgaramond-regular'; color:#666;}
 u, li, a {list-style:none; text-decoration:none;}
 a{color: #fff;}
 a:hover { color: #0c5b57;}
-.f-32{font-size:32px;}
+.f-80{font-size:80px !important;}
 .clear{ clear:both;}
 .co-green{color:#0c5b57;}
 .co-red{color:#cc0000;}
