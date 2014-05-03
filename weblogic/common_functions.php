@@ -61,19 +61,34 @@ class Common_Functions {
 	//Send Spam Mail Enquiries, code starts here
 	public static function sendMail($submitId, $messageBody, $formName, $userEmail, $date, $template){
 
-			//Mailing to User
-			$MailBodyUser = file_get_contents(GLOBAL_PATH.'/assets/email-templates/'.$template.'');
+			$explodeTemplate = explode(',',$template);
+			$templateAdmin = $explodeTemplate[0];
+			$templateUser = $explodeTemplate[1];
+
+			//Email to Admin
+			$MailBodyUser = file_get_contents(GLOBAL_PATH.'/assets/email-templates/'.$templateAdmin.'');
+			$MailBodyUser = str_replace('[%FORM_NAME%]',$formName, $MailBodyUser);
+			$MailBodyUser = str_replace('[%FORM_DATA%]',$messageBody, $MailBodyUser);
+			$MailBodyUser = str_replace('[%DATETIME%]',$date, $MailBodyUser);
+			
+			$MailSubjectUser = 'Hollyton.co.uk - '.$formName;
+			$headersUser = "From: Hollyton Web Team <" . strip_tags(WEBTEAM_EMAIL_ID) . "> \n";
+			$headersUser .= "Reply-To: ". strip_tags(WEBTEAM_EMAIL_ID) . "\n";
+			$headersUser .= "MIME-Version: 1.0\n";
+			$headersUser .= "Content-Type: text/html; charset=ISO-8859-1\n";
+			$mailAdmin = @mail(MAIL_TO, $MailSubjectUser, $MailBodyUser, $headersUser);
+			
+			//Email to User
+			$MailBodyUser = file_get_contents(GLOBAL_PATH.'/assets/email-templates/'.$templateUser.'');
 			$MailBodyUser = str_replace('[%FORM_NAME%]',$formName, $MailBodyUser);
 			$MailBodyUser = str_replace('[%FORM_DATA%]',$messageBody, $MailBodyUser);
 			$MailBodyUser = str_replace('[%DATETIME%]',$date, $MailBodyUser);
 			
 			$MailSubjectUser = 'Auto Reply: Hollyton.co.uk - '.$formName;
-			$headersUser = "From: <Hollyton>" . strip_tags(INFO_EMAIL_ID) . "\r\n";
-			$headersUser .= "Reply-To: ". strip_tags(INFO_EMAIL_ID) . "\r\n";
-			//$headersAdmin .= "CC: sid@isglobalweb.com\r\n";
-			$headersUser .= "MIME-Version: 1.0\r\n";
-			$headersUser .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-
+			$headersUser = "From: Hollyton <" . strip_tags(INFO_EMAIL_ID) . "> \n";
+			$headersUser .= "Reply-To: ". strip_tags(INFO_EMAIL_ID) . "\n";
+			$headersUser .= "MIME-Version: 1.0\n";
+			$headersUser .= "Content-Type: text/html; charset=ISO-8859-1\n";
 			$mailAdmin = @mail($userEmail, $MailSubjectUser, $MailBodyUser, $headersUser);
 			
 			return $mailAdmin;

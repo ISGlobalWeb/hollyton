@@ -55,7 +55,7 @@ include_once ROOT_PATH."/weblogic/header.php";
                     </li>
                     <li>
                       <label>*Firstname</label>
-                      <input type="text" name="fname" id="fname">
+                      <input type="text" name="fname" id="fname" required>
                     </li>
                     <li>
                       <label>Surname</label>
@@ -63,7 +63,7 @@ include_once ROOT_PATH."/weblogic/header.php";
                     </li>
                     <li>
                       <label>*Email</label>
-                      <input type="email" name="email" id="email">
+                      <input type="email" name="email" id="email" required>
                     </li>
                     <li>
                       <label>Phone</label>

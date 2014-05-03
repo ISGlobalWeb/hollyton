@@ -27,7 +27,7 @@ if(isset( $_POST['submitcontactus']) || isset($_POST['submitcontactus_x']))
 
 		if($lastUserId){
 			$formName = 'Contact Us';
-			$template = 'contactus-admin.html';
+			$template = 'contactus-admin.html,contactus-user.html';
 			
 			$messageBody = '<tr>
     							<td bgcolor="#f3f2dd">Name :</td>
@@ -49,7 +49,7 @@ if(isset( $_POST['submitcontactus']) || isset($_POST['submitcontactus_x']))
 			//sending mail to amdin and user
 			$successMail = Common_Functions :: sendMail($lastUserId, $messageBody, $formName, $email, $datetime, $template);
 			
-			@header('Location:'.GLOBAL_PATH.'/thanks/success-register.php');
+			@header('Location:'.GLOBAL_PATH.'/thanks/success-contactus.php');
 			exit();
 		}
 	}
