@@ -1,5 +1,5 @@
 body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section {margin:0;padding:0;border:0;}
-body, h1, h2, h3, h4, h4, h5, h6, p,li, label {  font-size:15px; font-style: normal; margin: 0; padding: 0;} 
+body, h1, h2, h3, h4, h4, h5, h6, p,li, label { font-style: normal; margin: 0; padding: 0;} 
 
 h1, h2, h3 {color:#13717B;}
 h1{font-size:20px;}
@@ -24,6 +24,8 @@ a:hover { color: #0c5b57;}
 .clear{ clear:both;}
 .co-green{color:#0c5b57;}
 .co-red{color:#cc0000;}
+.co-yellow{color:#FEDF00;}
+.co-black{color:#333;}
 @font-face {
     font-family: 'ebgaramond-regular'; 
     src: url('../font/ebgaramond-regular.eot');
@@ -45,7 +47,7 @@ header {display: block; position: relative; z-index: 999;width:100%; }
 .header-outer{width:100%; position:absolute; top:0px; background:url(../images/top-trans-bg.png) repeat-x bottom; height:150px;}
 .header-inner{width:1200px; margin:0px auto; overflow:hidden; padding-top:50px;}
 #logo {float:left;  padding-left:2%;  width:12%; height:142px;}
-#logo a { display: block; height: 142px;  }
+#logo a { display: block; height: 142px; position:relative; z-index:1;  }
 #logo a img {  }
 #head-right{float:right; padding-right:2%; width:84%;}
 .call-us {  color: #fff; float:right; font-size:21px;  width:100%; text-align:right;}
@@ -62,6 +64,12 @@ header {display: block; position: relative; z-index: 999;width:100%; }
 .no-divder{background:none !important; padding-right:0px !important; }
 .banner-caption{ width:1200px; margin:0px auto; position:absolute; right:0px; bottom:30px; }
 .caption-text{  background:url(../images/banner-trans-bg.png) repeat; height:56px; width:352px; float:right; color:#fff; padding:10px;font-size:17px; line-height:18px;  right:2%; margin-right:2%; }
+
+
+.thanks-content{ width:100%; position:absolute; top:250px; background:url(../images/trans-bg-white.png) repeat; min-height:200px; }
+.thanks-inner{ width:1200px; margin:0px auto;  position:relative; top:30px;}
+.thanks-inner h1{ padding:0 2%; width:96%; font-size:32px; padding-bottom:20px;}
+.thanks-inner p{ padding:0 2%; width:96%; font-family:Arial;}
 
 /*Header end*/
 
@@ -123,7 +131,7 @@ header {display: block; position: relative; z-index: 999;width:100%; }
 @media only screen and (max-width:1024px){
   /* rules that only apply for canvases narrower than 1000px */
     .banner{ width:100%; position:relative; min-height:100px; }
- header, #banner, #middle,.header-inner,.content-inner,.footer-inner{ width:100%; padding:0%;} 
+ header, #banner, #middle,.header-inner,.thanks-inner,.content-inner,.footer-inner{ width:100%; padding:0%;} 
   .header-outer{ height:105px;}
   .header-inner{padding-top:0px;}
   .menu li {font-size:15px;}
@@ -132,6 +140,8 @@ header {display: block; position: relative; z-index: 999;width:100%; }
 @media only screen and (max-width: 999px) {
   /* rules that only apply for canvases narrower than 1000px */
  #menu li a {color:#3b3839; display:block; padding:0px 10px; position:relative; font-size:11px;}
+ .thanks-content{  top:200px; }
+
 }
 @media only screen and (max-width: 800px){
 /* #top-header{width:768px; margin:0px auto;}  */
@@ -152,6 +162,10 @@ a.menu-link { display: block; background:url(../images/menu-ico.png) no-repeat s
 .menu ul li{clear:both; background:none; line-height:35px; border-bottom:1px solid #999; width:190px;}
 .menu, .menu > ul ul { overflow: hidden;max-height: 0;}
 .menu.active, .menu > ul ul.active { max-height: 55em; position:relative; z-index:1;}
+.thanks-content{  top:150px;min-height:150px; }
+.thanks-inner{  position:relative; top:10px;}
+.thanks-inner h1{ font-size:30px;}
+
 }
 
 @media only screen and (max-width: 640px) {
@@ -174,6 +188,7 @@ a.menu-link { display: block; background:url(../images/menu-ico.png) no-repeat s
   .content-inner h2{font-size:24px;}
 .ico-phone img{ width:17px; height:14px;}
 .ico-mail img{width:18px; height:14px; }
+ .thanks-content{  top:100px;min-height:100px; }
 }
 
 @media only screen and (max-width: 320px){
@@ -184,6 +199,8 @@ a.menu-link { display: block; background:url(../images/menu-ico.png) no-repeat s
 .ico-phone{padding-right:0px; float:right; clear:both;}
 .ico-mail{padding-right:0px; float:right; clear:both; padding-bottom:20px;}
   .content-inner h2{font-size:20px;}
+ 
+
   
 
 
