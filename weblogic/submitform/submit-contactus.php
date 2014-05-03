@@ -23,15 +23,35 @@ if(isset( $_POST['submitcontactus']) || isset($_POST['submitcontactus_x']))
 		$columnName = array('title','fname','sname','email','phone','comment','datetime','ip','ref');
 		$columnValue = array($title,$fname,$sname,$email,$phone,$comment,$datetime,$ip,$ref);
 		
-		$lastUserId = Functions :: submitForm($columnName,$columnValue,TBL_CONTACTUS);
+		$lastUserId = Common_Functions :: submitForm($columnName,$columnValue,TBL_CONTACTUS);
 
 		if($lastUserId){
-			$mailSubject = 'Contact Us - Hollyton.co.uk';
-			$template = 'verify-email.html';
-			Common_Functions :: sendMail($lastUserId, $messageBody, $mailSubject, $email, $datetime, $template);
+			$formName = 'Contact Us';
+			$template = 'contactus-admin.html';
+			
+			$messageBody = '<tr>
+    							<td bgcolor="#f3f2dd">Name :</td>
+    							<td bgcolor="#f3f2dd">'.$title.' '.$fname.' '.$sname.'</td>
+							</tr>
+							<tr>
+								<td bgcolor="#FFFFFF">Email :</td>
+								<td bgcolor="#FFFFFF">'.$email.'</td>
+							</tr>
+							<tr>
+								<td bgcolor="#f3f2dd">Phone :</td>
+								<td bgcolor="#f3f2dd">'.$phone.'</td>
+							</tr>
+							<tr>
+								<td bgcolor="#FFFFFF">Comments :</td>
+								<td bgcolor="#FFFFFF">'.$comment.'</td>
+							</tr>';
+			
+			//sending mail to amdin and user
+			$successMail = Common_Functions :: sendMail($lastUserId, $messageBody, $formName, $email, $datetime, $template);
+			
+			@header('Location:'.GLOBAL_PATH.'/thanks/success-register.php');
+			exit();
 		}
-		@header('Location:'.GLOBAL_PATH.'/success-register.php');
-		exit();
 	}
 }
 ?>

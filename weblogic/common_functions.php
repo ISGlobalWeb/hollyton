@@ -1,36 +1,82 @@
 <?php
-	include_once ROOT_PATH . "/weblogic/dbutil.php";
+include_once ROOT_PATH . "/weblogic/dbutil.php";
 	
-	class Common_Functions {
+class Common_Functions {
 		
-		function randString( $length ) {
-			$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";	
+	function randString( $length ) {
+		$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";	
 
-			$size = strlen( $chars );
-			for( $i = 0; $i < $length; $i++ ) {
-				$str .= $chars[ rand( 0, $size - 1 ) ];
-			}
-			$str .= rand(1,9999);
-			return $str;
+		$size = strlen( $chars );
+		for( $i = 0; $i < $length; $i++ ) {
+			$str .= $chars[ rand( 0, $size - 1 ) ];
 		}
+		$str .= rand(1,9999);
+		return $str;
+	}
 		
-		
-		//Send Spam Mail Enquiries, code starts here
-		public static function sendMail($submitId, $messageBody, $mailSubject, $userEmail, $date, $template){
+	/*Submit Form, Code Starts Here*/
+	public static function submitForm($columnName,$columnValue,$tableName) {
+		if(!empty($columnValue)) {
+			try {
+				
+				
+				$dbUtil = new DbUtil();
 
-			$getMessage = file_get_contents(GLOBAL_PATH.'/assets/email-templates/'.$template.'');
-			$getMessage = str_replace('[%VERIFY_LINK%]',$messageBody, $getMessage);
-			//Mail to User
-			$messageToUser = $getMessage;
-			$mailSubjectUser = $mailSubject;
-			$headersUser = "From: " . strip_tags(INFO_EMAIL_ID) . "\r\n";
+				foreach($columnName as $column){
+					$showColumn .= $column;
+					$showColumn .= ",";
+				
+					$showMark .= '?';
+					$showMark .= ',';
+				}
+				$showColumn = rtrim($showColumn, ",");
+				$showMark = rtrim($showMark, ",");
+				
+				if(!empty($columnName) && !empty($columnValue)) {
+					$insert_enq_sql = "INSERT INTO $tableName ($showColumn)" . "VALUES ($showMark)";
+					$statement = $dbUtil->prepare($insert_enq_sql);
+					$statement->execute($columnValue);
+					$uniqueEnquiryId = $dbUtil->pk();
+				} else {
+					$uniqueEnquiryId = NULL;
+				}
+				$submit_id = $uniqueEnquiryId;
+				
+				$dbUtil->commit();
+
+			} catch (Exception $e) {
+				if(!empty($dbUtil)) {
+					/*** roll back the transaction if we fail ***/
+					$dbUtil->rollback();
+				}
+				$submit_id = NULL;
+			}
+		} else {
+				$isSuccess = NULL;
+		}
+		return $submit_id;
+	}
+	/*Submit Form, Code Ends Here*/
+	
+	//Send Spam Mail Enquiries, code starts here
+	public static function sendMail($submitId, $messageBody, $formName, $userEmail, $date, $template){
+
+			//Mailing to User
+			$MailBodyUser = file_get_contents(GLOBAL_PATH.'/assets/email-templates/'.$template.'');
+			$MailBodyUser = str_replace('[%FORM_NAME%]',$formName, $MailBodyUser);
+			$MailBodyUser = str_replace('[%FORM_DATA%]',$messageBody, $MailBodyUser);
+			$MailBodyUser = str_replace('[%DATETIME%]',$date, $MailBodyUser);
+			
+			$MailSubjectUser = 'Auto Reply: Hollyton.co.uk - '.$formName;
+			$headersUser = "From: <Hollyton>" . strip_tags(INFO_EMAIL_ID) . "\r\n";
 			$headersUser .= "Reply-To: ". strip_tags(INFO_EMAIL_ID) . "\r\n";
 			//$headersAdmin .= "CC: sid@isglobalweb.com\r\n";
 			$headersUser .= "MIME-Version: 1.0\r\n";
 			$headersUser .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-			$mailAdmin = @mail($userEmail, $mailSubjectUser, $messageToUser, $headersUser);
-
+			$mailAdmin = @mail($userEmail, $MailSubjectUser, $MailBodyUser, $headersUser);
+			
+			return $mailAdmin;
 		}
 		//Send Spam Mail Enquiries, code ends here
 	
