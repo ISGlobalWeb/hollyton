@@ -24,7 +24,7 @@
 <!--Caption start here-->
 <div class="banner-caption">
 	<div class="caption-text">
-   Valued in <span class="">2011</span> at £290,000. Valued in 2014 at £370,000. A rise of 28%. Average rental yield during that time of 4%.
+   Valued in <span class="">2011</span> at <span class="">£290,000.</span>. Valued in <span class="">2014</span> at <span class="">£370,000.</span> A rise of <span class="">28%.</span> Average rental yield during that time of <span class="">4%.</span>
     </div>
     </div>
 <!--Caption End Here-->
