@@ -67,7 +67,7 @@ include_once ROOT_PATH."/weblogic/header.php";
                     </li>
                     <li>
                       <label>Phone</label>
-                      <input type="number" name="phone" id="phone">
+                      <input type="text" name="phone" id="phone">
                     </li>
                     <li>
                       <label>Comments</label>
