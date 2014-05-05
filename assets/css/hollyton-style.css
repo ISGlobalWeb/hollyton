@@ -118,7 +118,34 @@ header {display: block; position: relative; z-index: 999;width:100%; }
 
 
 
+<!-- back to top css -->
 
+#fixed-bar {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+	background:none;
+    z-index: 100; right:0;
+}
+#fixed-bar a {
+    color: white;
+    text-decoration: none;
+}
+#bar-inner {
+    width: 1360px;
+    margin: 0 auto;
+    height: 36px;
+    line-height: 36px;
+	padding-right:10px;
+}
+#bar-inner img{ float:right;}
+@media only screen and (max-width: 1024px){
+#fixed-bar {
+	background:url(../images/fancy_title_over.png) repeat;
+}	
+
+}
+<!-- back to top css -->
 
 
 

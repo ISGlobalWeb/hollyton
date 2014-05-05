@@ -64,6 +64,7 @@ London is still a great place to invest, but that investment should me made wise
 </footer>
 <!--Footer End Here-->
 </div>
+<?php include "include/go-to-top.php";?>
 
 </body>
 </html>

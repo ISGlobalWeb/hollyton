@@ -59,6 +59,6 @@ We will often have access to properties that are not available elsewhere and are
 </footer>
 <!--Footer End Here-->
 </div>
-
+<?php include "include/go-to-top.php";?>
 </body>
 </html>

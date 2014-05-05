@@ -91,7 +91,8 @@ include_once ROOT_PATH."/weblogic/header.php";
   <footer>
     <?php include "include/footer.php";?>
   </footer>
-  <!--Footer End Here--> 
+<!--Footer End Here--> 
 </div>
+<?php include "include/go-to-top.php";?>
 </body>
 </html>

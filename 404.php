@@ -50,8 +50,7 @@ ERROR</h1>
 <?php include "include/footer.php";?>
 </footer>
 <!--Footer End Here-->
-<div class="clear"></div>
 </div>
-
+<?php include "include/go-to-top.php";?>
 </body>
 </html>

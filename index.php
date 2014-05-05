@@ -61,6 +61,6 @@ include_once ROOT_PATH."/weblogic/header.php";
 </footer>
 <!--Footer End Here-->
 </div>
-
+<?php include "include/go-to-top.php";?>
 </body>
 </html>

@@ -80,6 +80,6 @@ you can trust us to find the right opportunity for you.</p>
 </footer>
 <!--Footer End Here-->
 </div>
-
+<?php include "include/go-to-top.php";?>
 </body>
 </html>
