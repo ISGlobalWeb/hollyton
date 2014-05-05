@@ -47,7 +47,7 @@ properties.
 In either case, we would be delighted to act as your agent, ensuring
 that you receive the right buyer at the right price.
 </p>
-<p>Our network of investors is based around the world. They have a range of investrnent goals. it is our job to know them so well that
+<p>Our network of investors is based around the world. They have a range of investrnent goals. It is our job to know them so well that
 we only introduce your property to people who are serious about buying and who have the means to do so.</p>
 </div>
 <div class="content-right">
@@ -55,11 +55,11 @@ we only introduce your property to people who are serious about buying and who h
 We pride ourselves on complete candour with our clients. From
 your perspective, this means will be honest from the very start
 about what we believe your property is worth, and who is most
-likely to buy it. we will also make suggestions about how you may
-be able to raise its value. we are not here to flatter you, but to create
+likely to buy it. We will also make suggestions about how you may
+be able to raise its value. We are not here to flatter you, but to create
 realistic and positive outcomes.
 </p>
-         <p> Throughout this process, you can leave the hard work to us. we
+         <p> Throughout this process, you can leave the hard work to us. We
 are yet to source a London property that we have been unable to
 sell.
 </p>

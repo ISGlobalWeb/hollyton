@@ -44,7 +44,7 @@ a:hover { color: #0c5b57;}
 #wrapper { margin: 0 auto; width:100%;}
 /*Header Start*/
 header {display: block; position: relative; z-index: 999;width:100%; }
-.banner{ width:100%; position:relative; overflow:hidden; min-height:586px;  background:url(../images/hollyton-loader.gif) no-repeat center center;}
+.banner{ width:100%; position:relative; overflow:hidden; min-height:400px;  background:url(../images/hollyton-loader.gif) no-repeat center center;}
 .banner img{ width:100%; vertical-align:bottom;}
 .header-outer{width:100%; position:absolute; top:0px; background:url(../images/top-trans-bg.png) repeat-x bottom; height:150px;}
 .header-inner{width:1200px; margin:0px auto; overflow:hidden; padding-top:50px;}
@@ -65,8 +65,8 @@ header {display: block; position: relative; z-index: 999;width:100%; }
 .menu li a:hover, .menu li a:active , .active{color: #fedf00; }
 .no-divder{background:none !important; padding-right:0px !important; }
 .banner-caption{ width:1200px; margin:0px auto; position:absolute; right:0px; bottom:30px; }
-.caption-text{  background:url(../images/banner-trans-bg.png) repeat; height:56px; width:352px; float:right; color:#fff; padding:10px;font-size:17px; line-height:18px;  right:2%; margin-right:2%; }
-
+.caption-text{  background:url(../images/banner-trans-bg.png) repeat; height:56px; width:345px; float:right; color:#fff; padding:10px;font-size:17px; line-height:18px;  right:2%; margin-right:2%; font-style:italic;}
+.caption-text span{  font:italic 14px Arial;}
 
 .thanks-content{ width:100%; position:absolute; top:250px; background:url(../images/trans-bg-white.png) repeat; min-height:200px; }
 .thanks-inner{ width:1200px; margin:0px auto;  position:relative; top:30px;}

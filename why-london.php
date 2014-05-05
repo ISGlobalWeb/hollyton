@@ -24,7 +24,7 @@
 <!--Caption start here-->
 <div class="banner-caption">
 	<div class="caption-text">
-   Valued in 2011 at £290,000. Valued in 2014 at £370,000. A rise of 28%. Average rental yield during that time of 4%.
+   Valued in <span class="">2011</span> at £290,000. Valued in 2014 at £370,000. A rise of 28%. Average rental yield during that time of 4%.
     </div>
     </div>
 <!--Caption End Here-->
@@ -36,7 +36,7 @@
 <figure id="content">
     <div id="heading">
         <div class="content-inner">
-        <h2>Why LONDON?</h2>
+        <h2>Why London?</h2>
         <div class="content-part">
         <div class="content-left">
        
@@ -48,7 +48,7 @@
 </p></div>
 <div class="content-right">
         <p>
-Our experience, coupled with our extensive range of contacts enables us to source investment properties even range of contacts enables us to source investment properties even though there are few available. We are happy to advise you to ensure that your London investment is made against a clear and realistic set of goals.
+Our experience, coupled with our extensive range of contacts enables us to source investment properties even  though there are few available. We are happy to advise you to ensure that your London investment is made against a clear and realistic set of goals.
 </p>
          <p> 
 London is still a great place to invest, but that investment should me made wisely, and with a clear strategy in mind.</p>

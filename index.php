@@ -27,7 +27,7 @@ include_once ROOT_PATH."/weblogic/header.php";
 <!--Caption start here-->
 <div class="banner-caption">
 	<div class="caption-text">
-    Valued in 2003 at £290,000. Valued in 2014 at £595,000. A rise of 105%. Average rental yield during that time of 4.8%.
+    Valued in 2004 at £1,600,000. Valued in 2014 at £4,500,000. A rise of 243%. Average rental yield during that time of 3.3%.
     </div>
     </div>
 <!--Caption End Here-->
@@ -43,7 +43,7 @@ include_once ROOT_PATH."/weblogic/header.php";
         <div class="content-part">
         <div class="content-left">
         <p>You won't see us on the High Street or featured on any other property website. That's not our way. At Hollyton we prefer to do our business quietly with people we know, or with people who they  introduce to us. As a result, we are given the opportunity to discreetly introduce you to some of London's best investment opportunities.</p>
-<p>Our extensive experience and strong relationships with property developers and owners means we have worked on every type of London property from new developments to period town houses. Each has it's own benefits, and depending on its geographical area, each presents its own risks and rewards.
+<p>Our extensive experience and strong relationships with property developers and owners means we have worked on every type of London property from new developments to period town houses. Each has it's own benefits, and, depending on its geographical area, each presents its own risks and rewards.
 </p
 ></div>
 <div class="content-right">
