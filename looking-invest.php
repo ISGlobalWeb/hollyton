@@ -23,9 +23,11 @@
 </div> 
 <!--Caption start here-->
 <div class="banner-caption">
+	<div class="banner-cap-inner">
 	<div class="caption-text">
 Valued in 2003 at £290,000. Valued in 2014 at £595,000. A rise of 105%. Average rental yield during that time of 4.8%.    </div>
     </div>
+</div>
 <!--Caption End Here-->
 <div class="clear"></div>
 </header>

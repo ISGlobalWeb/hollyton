@@ -25,9 +25,11 @@ include_once ROOT_PATH."/weblogic/header.php";
       </div>
     </div>
     <!--Caption start here-->
-    <div class="banner-caption">
+<div class="banner-caption">
+	<div class="banner-cap-inner">
       <div class="caption-text"> Valued in 2004 at £1,600,000. Valued in 2014 at £4,500,000. A rise of 243%. Average rental yield during that time of 3.3%. </div>
-    </div>
+      </div>
+</div>
     <!--Caption End Here-->
     <div class="clear"></div>
   </header>

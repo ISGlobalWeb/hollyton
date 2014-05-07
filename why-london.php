@@ -23,10 +23,12 @@
 </div> 
 <!--Caption start here-->
 <div class="banner-caption">
+	<div class="banner-cap-inner">
 	<div class="caption-text">
    Valued in <span class="">2011</span> at <span class="">£290,000.</span> Valued in <span class="">2014</span> at <span class="">£370,000.</span> A rise of <span class="">28%.</span> Average rental yield during that time of <span class="">4%.</span>
     </div>
     </div>
+</div>
 <!--Caption End Here-->
 <div class="clear"></div>
 </header>
