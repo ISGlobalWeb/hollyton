@@ -38,7 +38,7 @@ switch ($getUrl) {
   <!--Nav Start Here-->
   
   <nav>
-    <div class="nav_750 display750"> <a href="#menuu" class="menu-link">Menu</a> <a onclick="history.go(-1)" class="back-btn-home">Back</a> </div>
+    <div class="nav_750 display750"> <a href="#menuu" class="menu-link">Menu</a>  </div>
     <div id="menuu" class="menu">
       <ul>
         <li><a href="<?php echo GLOBAL_PATH;?>" class="<?php echo $home;?>"> Home</a></li>

@@ -151,14 +151,6 @@ header {display: block; position: relative; z-index: 999;width:100%; }
 
 
 
-
-
-
-
-
-
-
-
 @media only screen and (min-width:1024px) and (max-width:1200px) {
   /* rules that only apply for canvases narrower than 1000px */
 }
@@ -166,7 +158,8 @@ header {display: block; position: relative; z-index: 999;width:100%; }
   /* rules that only apply for canvases narrower than 1000px */
     .banner{ width:100%; position:relative; min-height:100px; }
  header, #banner, #middle,.header-inner,.thanks-inner,.content-inner,.footer-inner{ width:100%; padding:0%;} 
-  .header-outer{ height:105px;}
+  .header-inner{padding-top:20px !important;}
+  .header-outer{ height:115px;}
   .header-inner{padding-top:0px;}
   .menu li {font-size:15px;}
   
@@ -181,17 +174,17 @@ header {display: block; position: relative; z-index: 999;width:100%; }
 }
 @media only screen and (max-width: 800px){
 /* #top-header{width:768px; margin:0px auto;}  */
-#logo {width:16%;}
-#head-right{width:80%;}
+#logo {width:12%;}
 }
 
 @media only screen and (max-width: 750px) {
 	.clear-750{clear:both;}
 .page-home .back-btn-home{ display:none !important;}
+#logo {width:20%;}
+#head-right{width:76%;}
 .call-us { clear:both;  font-size:18px; line-height:18px; height:44px; }
 .display750{ display:block;}
 .nav_750{ border:0 !important; width:100%; font-weight:bold; display:table; padding:15px 0 0 0;}
-a.back-btn-home{background:url(../images/back.png) no-repeat scroll 35px 4px #fedf00;display:block;color:#0c5b57;text-indent:99999;padding:2px 0px 6px 3px; width:60px; border-radius:3px; float:right; margin-right:5px; font-weight:normal;}
 a.menu-link { display: block; background:url(../images/menu-ico.png) no-repeat scroll 42px 4px #fedf00;color:#0c5b57;text-indent:99999;padding:2px 0px 6px 3px; width:70px; border-radius:3px; float:right; font-weight:normal;}
 .menu{height:auto; padding-top:0px; background:#383838;}
 .menu ul{display:block;}
@@ -207,7 +200,7 @@ a.menu-link { display: block; background:url(../images/menu-ico.png) no-repeat s
 
 @media only screen and (max-width: 640px) {
 /* iPhone, Android rules here */
-#logo {width:23%;}
+
 #head-right{width:73%; position:relative;}
 .content-left{width:100%; padding-right:0%;}
 .content-right{width:100%; padding-left:0%;}
@@ -220,22 +213,25 @@ a.menu-link { display: block; background:url(../images/menu-ico.png) no-repeat s
 }
 @media only screen and (max-width: 480px){
   /* iPhone, Android rules here */
+  #logo {width:30%;}
+#head-right{width:66%;}
   .dis-none-480{display:none;}
   .banner-caption{display:none;}
   .content-inner h2{font-size:24px;}
+  .ico-phone{padding-right:0px; float:right; clear:both;}
+.ico-mail{padding-right:0px; float:right; clear:both; padding-bottom:20px;}
 .ico-phone img{ width:17px; height:14px;}
 .ico-mail img{width:18px; height:14px; }
  .thanks-content{  top:100px;min-height:100px; }
+ .nav_750{padding-top:10px;}
 }
 
 @media only screen and (max-width: 320px){
   /* iPhone, Android rules here */
 .dis-none-320{display:none;}
-#logo {width:30%;}
-#head-right{width:66%;}
-.ico-phone{padding-right:0px; float:right; clear:both;}
-.ico-mail{padding-right:0px; float:right; clear:both; padding-bottom:20px;}
+.call-us { font-size:16px; }
   .content-inner h2{font-size:20px;}
+  .nav_750{padding-top:0px;}
  
 
   
