@@ -49,7 +49,7 @@ if(isset( $_POST['submitcontactus']) || isset($_POST['submitcontactus_x']))
 			//sending mail to amdin and user
 			$successMail = Common_Functions :: sendMail($lastUserId, $messageBody, $formName, $email, $datetime, $template);
 			
-			@header('Location:'.GLOBAL_PATH.'/thanks/success-contactus.php');
+			@header('Location:'.GLOBAL_PATH.'/thanks/success-contactus/');
 			exit();
 		}
 	}

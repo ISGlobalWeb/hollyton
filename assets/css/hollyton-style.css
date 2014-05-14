@@ -21,6 +21,7 @@ u, li, a {list-style:none; text-decoration:none;}
 a{color: #fff;}
 a:hover { color: #0c5b57;}
 .f-80{font-size:80px !important;}
+.f-13{font-size:13px !important;}
 .clear{ clear:both;}
 .f-left{float:left;}
 .f-right{float:right;} 
@@ -28,6 +29,7 @@ a:hover { color: #0c5b57;}
 .co-red{color:#cc0000;}
 .co-yellow{color:#fedf00;}
 .co-black{color:#333;}
+.fo-ar{font-family:Arial;}
 @font-face {
     font-family: 'ebgaramond-regular'; 
     src: url('../font/ebgaramond-regular.eot');
@@ -160,9 +162,8 @@ header {display: block; position: relative; z-index: 999;width:100%; }
   /* rules that only apply for canvases narrower than 1000px */
     .banner{ width:100%; position:relative; min-height:100px; }
  header, #banner, #middle,.header-inner,.thanks-inner,.content-inner,.footer-inner{ width:100%; padding:0%;} 
-  .header-inner{padding-top:20px !important;}
+  .header-inner{padding-top:20px;}
   .header-outer{ height:115px;}
-  .header-inner{padding-top:0px;}
   .menu li {font-size:15px;}
   
 }
@@ -227,6 +228,8 @@ a.menu-link { display: block; background:url(../images/menu-ico.png) no-repeat s
 .ico-mail img{width:18px; height:14px; }
  .thanks-content{  top:100px;min-height:100px; }
  .nav_750{padding-top:10px;}
+   .header-inner{padding-top:10px;}
+   .copyright{padding-top:110px; font-size:14px; line-height:15px;}
 
 }
 
@@ -236,6 +239,7 @@ a.menu-link { display: block; background:url(../images/menu-ico.png) no-repeat s
 .call-us { font-size:16px; }
   .content-inner h2{font-size:20px;}
   .nav_750{padding-top:0px;}
+  .header-outer{height:100px;}
  
 
   

@@ -43,7 +43,7 @@ include_once ROOT_PATH."/weblogic/header.php";
         <div class="content-part">
           <div class="content-left">
             <p>You have probably already met us and are holding one of our cards.</p>
-            <p>If you don't already have our contact details, please feel free to call Sam on X to discuss any aspect of our service.
+            <p>If you don't already have our contact details, please feel free to call Sam Simpkin on +44 (0) 7903 208 993  to discuss any aspect of our service.
             </p>
           </div>
           <div class="content-right">

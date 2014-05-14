@@ -1,6 +1,6 @@
  <div id='fixed-bar' style="right: 0px;">
   <div id='bar-inner'>
-    <a class='go-top' href='#page-wrapper' title='back to top'><img src="<?php echo GLOBAL_PATH;?>/assets/images/go-to-top.png" width="37" height="45"></a>
+    <a class='go-top' href='#page-wrapper' title='back to top'><img src="<?php echo GLOBAL_PATH;?>/assets/images/go-to-top.png" width="37" height="45" alt="go to top"></a>
   </div>
 </div>
 <script>
